@@ -4,6 +4,12 @@
         "InstanceSecurityGroup": {
             "Type": "AWS::EC2::SecurityGroup",
             "Properties": {
+                "Tags": [
+                  {
+                    "Key": "yor_trace",
+                    "Value": "ddaa6083-329a-45b7-9e01-eb54437be1c5"
+                  }
+                ],
                 "GroupDescription": "Allow http to client host",
                 "VpcId": "myVPC",
                 "GroupName" : "default",
