@@ -4,6 +4,12 @@
     "s3manishcicd": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
+        "Tags": [
+          {
+            "Key": "yor_trace",
+            "Value": "c6883913-3f27-41ae-af41-6c7c5b36f75f"
+          }
+        ],
         "AccessControl": "LogDeliveryWrite",
         "LoggingConfiguration": {
           "DestinationBucketName": {
